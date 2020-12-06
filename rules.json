@@ -1,5 +1,3 @@
 {
-    "rules": {
-        "max-statements-per-line": ["warn", { "max": 4 }]
-    }
+    "max-statements-per-line": ["warn", { "max": 4 }]
 }

@@ -3,8 +3,8 @@
 const { resolve } = require("path");
 
 module.exports = {
-    extends: [resolve(__dirname, "..", "index.js"), resolve(require.resolve("@hazmi35/eslint-config/typescript")), resolve(__dirname, "..", "rules.json")],
-    rules: {
+    extends: [resolve(__dirname, "..", "index.js"), resolve(require.resolve("@hazmi35/eslint-config/typescript"))],
+    rules: Object.assign({
         "@typescript-eslint/no-var-requires": "off",
         "@typescript-eslint/member-ordering": [
             "error",
@@ -34,5 +34,5 @@ module.exports = {
                 ]
             }
         ]
-    }
+    }, require(resolve(__dirname, "..", "rules.json")))
 };

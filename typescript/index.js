@@ -1,9 +1,9 @@
 /* eslint-disable sort-keys */
 /* eslint-env node */
-const path = require("path");
+const { resolve } = require("path");
 
 module.exports = {
-    extends: [path.join(__dirname, "..", "index.js"), path.join(require.resolve("@hazmi35/eslint-config/typescript")), path.join(__dirname, "..", "rules.json")],
+    extends: [resolve(__dirname, "..", "index.js"), resolve(require.resolve("@hazmi35/eslint-config/typescript")), resolve(__dirname, "..", "rules.json")],
     rules: {
         "@typescript-eslint/no-var-requires": "off",
         "@typescript-eslint/member-ordering": [

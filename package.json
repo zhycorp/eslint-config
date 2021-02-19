@@ -4,7 +4,7 @@
   "description": "An ESLint configuration used for some Zhycorp's projects",
   "repository": "git@github.com:zhycorp/eslint-config",
   "license": "AGPL-3.0",
-  "author": "Zhycorp Development",
+  "author": "Zhycorp",
   "main": "index.js",
   "scripts": {
     "lint": "eslint --ignore-path .gitignore . --cache --cache-location .cache/eslintcache"

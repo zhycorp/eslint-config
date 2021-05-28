@@ -1,32 +1,36 @@
 {
   "name": "@zhycorp/eslint-config",
-  "version": "2.5.0",
-  "description": "An ESLint configuration used for some Zhycorp's projects",
-  "repository": "git@github.com:zhycorp/eslint-config",
-  "license": "AGPL-3.0",
-  "author": "Zhycorp",
+  "version": "3.0.0",
+  "description": "An ESLint shareable configuration that used in Zhycorp's projects",
+  "keywords": [
+    "typescript",
+    "eslintconfig",
+    "lint",
+    "linter",
+    "eslint",
+    "typecript-eslint",
+    "eslint-config",
+    "tslint"
+  ],
+  "repository": "https://github.com/zhycorp/eslint-config",
+  "license": "BSD-3-Clause",
+  "author": "Zhycorp <support@zhycorp.com>",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint --ignore-path .gitignore . --cache --cache-location .cache/eslintcache"
-  },
-  "eslintConfig": {
-    "extends": "./index.js"
-  },
-  "dependencies": {
-    "@hazmi35/eslint-config": "^3.3.0"
+    "lint": "eslint --ignore-path .gitignore ."
   },
   "devDependencies": {
-    "@types/node": "^15.0.1",
-    "@typescript-eslint/eslint-plugin": ">=4.4.0",
-    "@typescript-eslint/parser": ">=4.4.0",
-    "eslint": ">=7.15.0",
-    "typescript": ">=3.8.2 <4.4.0"
+    "@types/node": "^15.6.1",
+    "@typescript-eslint/eslint-plugin": ">=4.25.0",
+    "@typescript-eslint/parser": ">=4.25.0",
+    "eslint": ">=7.27.0",
+    "typescript": ">=3.3.1 <4.4.0"
   },
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": ">=4.4.0",
-    "@typescript-eslint/parser": ">=4.4.0",
-    "eslint": ">=7.15.0",
-    "typescript": ">=3.8.2 <4.4.0"
+    "@typescript-eslint/eslint-plugin": ">=4.25.0",
+    "@typescript-eslint/parser": ">=4.25.0",
+    "eslint": ">=7.27.0",
+    "typescript": ">=3.3.1 <4.4.0"
   },
   "peerDependenciesMeta": {
     "@typescript-eslint/eslint-plugin": {

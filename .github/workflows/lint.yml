@@ -11,17 +11,21 @@ on:
 jobs:
   lint:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12.x, 14.x]
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2.3.4
-
-    - name: Setup Node.js
+  
+    - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v2.1.5
       with:
+        node-version: ${{ matrix.node-version }}
         check-latest: true
-
+        
     - name: Install dependencies
-      run: yarn install --frozen-lockfile
+      run: npm ci
 
     - name: Lint code
-      run: yarn run lint
+      run: npm run lint
